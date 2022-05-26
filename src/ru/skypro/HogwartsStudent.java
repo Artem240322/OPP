@@ -35,6 +35,10 @@ public abstract class HogwartsStudent {
         this.transgression = transgression;
     }
 
+    public void print() {
+        System.out.println(this);
+    }
+
 
     @Override
     public String toString() {
