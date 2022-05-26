@@ -1,6 +1,6 @@
 package ru.skypro;
 
-public class HogwartsStudent {
+public abstract class HogwartsStudent {
     private String name;
     private int magic;
     private int transgression;
@@ -38,7 +38,7 @@ public class HogwartsStudent {
 
     @Override
     public String toString() {
-        return String.format("Студент: %S; Сила магии: %D; Сила трансгрессии: %G", name, magic, transgression);
+        return String.format("Студент: %s; Сила магии: %d; Сила трансгрессии: %d", name, magic, transgression);
     }
 
 }
