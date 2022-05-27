@@ -47,6 +47,11 @@ public class RavenclawStudent extends HogwartsStudent{
     }
 
     @Override
+    public int ability() {
+        return cleverness + wisdom + win + creativity;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s; Ум: %d; мудрость: %d; сообразительность: %d; творчество: %d", super.toString(), cleverness, wisdom, win, creativity);
 

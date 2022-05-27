@@ -37,6 +37,10 @@ public class GriffindorSudent extends HogwartsStudent{
         this.bravery = bravery;
     }
 
+    @Override
+    public int ability() {
+        return nobility + honor + bravery;
+    }
 
     @Override
     public String toString() {

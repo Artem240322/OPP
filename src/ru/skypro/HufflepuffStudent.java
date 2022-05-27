@@ -38,6 +38,11 @@ public class HufflepuffStudent extends HogwartsStudent{
     }
 
     @Override
+    public int ability() {
+        return industriousness + loyalty + honesty;
+    }
+
+    @Override
     public String toString() {
         return String.format("%s; Трудолюбие: %d; Верность: %d; Честность: %d", super.toString(), industriousness, loyalty, honesty);
 

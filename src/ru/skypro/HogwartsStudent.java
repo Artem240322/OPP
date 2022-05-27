@@ -34,9 +34,16 @@ public abstract class HogwartsStudent {
     public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
+    public int ability() {
+        return magic + transgression;
+    }
 
     public void print() {
         System.out.println(this);
+    }
+
+    public void compareTo(HogwartsStudent hogwartsStudent){
+
     }
 
 

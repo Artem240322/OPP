@@ -56,6 +56,11 @@ public class SlytherinStudent extends HogwartsStudent{
         this.thirstForPower = thirstForPower;
     }
 
+    @Override
+    public int ability() {
+        return cunning + determination + ambition + thirstForPower;
+    }
+
 
     @Override
     public String toString() {
