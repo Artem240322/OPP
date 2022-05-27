@@ -6,7 +6,7 @@ public class RavenclawStudent extends HogwartsStudent{
     private int win;
     private int creativity;
 
-    public RavenclawStudent(String name, int magic, int transgression, int cleverness, int wisdom, int win, int creativity) {
+    public RavenclawStudent(String name, int magic, int transgression, int cleverness, int wisdom, int win) {
         super(name, magic, transgression);
         this.cleverness = cleverness;
         this.wisdom = wisdom;
