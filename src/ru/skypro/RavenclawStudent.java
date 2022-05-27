@@ -6,7 +6,7 @@ public class RavenclawStudent extends HogwartsStudent{
     private int win;
     private int creativity;
 
-    public RavenclawStudent(String name, int magic, int transgression, int cleverness, int wisdom, int win, int creativity) {
+    public RavenclawStudent(String name, int magic, int transgression, int cleverness, int wisdom, int win) {
         super(name, magic, transgression);
         this.cleverness = cleverness;
         this.wisdom = wisdom;
@@ -43,7 +43,24 @@ public class RavenclawStudent extends HogwartsStudent{
     }
 
     public void setCreativity(int creativity) {
-        this.creativity = creativity;
+       this.creativity = creativity;
+    }
+
+    public void compareRavenclaw(RavenclawStudent ravenclawStudent){
+        int ability1 = ability();
+        int ability2 = ravenclawStudent.ability();
+        if (ability1 > ability2) {
+            System.out.printf("Студент %s лучше студента %s%n", getName(), ravenclawStudent.getName());
+        } else if (ability2 > ability1){
+            System.out.printf("Студент %s лучше студента %s%n", ravenclawStudent.getName(), getName());
+        } else {
+            System.out.printf("Студент %s такой же как %s%n", ravenclawStudent.getName(), getName());
+        }
+    }
+
+
+    public int ability() {
+        return cleverness + wisdom + win + creativity;
     }
 
     @Override

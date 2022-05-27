@@ -56,6 +56,14 @@ public class SlytherinStudent extends HogwartsStudent{
         this.thirstForPower = thirstForPower;
     }
 
+
+
+
+    public int ability() {
+        return cunning + determination + ambition + ingenuity + thirstForPower;
+    }
+
+
     @Override
     public String toString() {
         return String.format("%s; хитрость: %d; решительность: %d; fv, амбицеозность: %d; жажда власти: %d", super.toString(), cunning, determination, ambition, ingenuity, thirstForPower);

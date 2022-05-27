@@ -36,6 +36,27 @@ public abstract class HogwartsStudent {
     }
 
 
+    public int abilityHogwarts() {
+        return magic + transgression;
+    }
+
+    public void print() {
+        System.out.println(this);
+    }
+
+    public void compareHogwarts(HogwartsStudent hogwartsStudent){
+        int ability1 = abilityHogwarts();
+        int ability2 = hogwartsStudent.abilityHogwarts();
+        if (ability1 > ability2) {
+            System.out.printf("Студент %s лучше студента %s%n", getName(), hogwartsStudent.getName());
+        } else if (ability2 > ability1){
+            System.out.printf("Студент %s лучше студента %s%n", hogwartsStudent.getName(), getName());
+        } else {
+            System.out.printf("Студент %s такой же как %s%n", hogwartsStudent.getName(), getName());
+        }
+    }
+
+
     @Override
     public String toString() {
         return String.format("Студент: %s; Сила магии: %d; Сила трансгрессии: %d", name, magic, transgression);
