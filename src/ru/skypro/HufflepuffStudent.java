@@ -37,7 +37,7 @@ public class HufflepuffStudent extends HogwartsStudent{
         this.honesty = honesty;
     }
 
-    @Override
+
     public int ability() {
         return industriousness + loyalty + honesty;
     }

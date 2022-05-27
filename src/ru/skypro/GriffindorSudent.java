@@ -37,7 +37,19 @@ public class GriffindorSudent extends HogwartsStudent{
         this.bravery = bravery;
     }
 
-    @Override
+    public void compareGriffindor(GriffindorSudent griffindorSudent){
+        int ability1 = ability();
+        int ability2 = griffindorSudent.ability();
+        if (ability1 > ability2) {
+            System.out.printf("Студент %s лучше студента %s%n", getName(), griffindorSudent.getName());
+        } else if (ability2 > ability1){
+            System.out.printf("Студент %s лучше студента %s%n", griffindorSudent.getName(), getName());
+        } else {
+            System.out.printf("Студент %s такой же как %s%n", griffindorSudent.getName(), getName());
+        }
+    }
+
+
     public int ability() {
         return nobility + honor + bravery;
     }

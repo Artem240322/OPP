@@ -34,7 +34,9 @@ public abstract class HogwartsStudent {
     public void setTransgression(int transgression) {
         this.transgression = transgression;
     }
-    public int ability() {
+
+
+    public int abilityHogwarts() {
         return magic + transgression;
     }
 
@@ -42,9 +44,9 @@ public abstract class HogwartsStudent {
         System.out.println(this);
     }
 
-    public void compareTo(HogwartsStudent hogwartsStudent){
-        int ability1 = ability();
-        int ability2 = hogwartsStudent.ability();
+    public void compareHogwarts(HogwartsStudent hogwartsStudent){
+        int ability1 = abilityHogwarts();
+        int ability2 = hogwartsStudent.abilityHogwarts();
         if (ability1 > ability2) {
             System.out.printf("Студент %s лучше студента %s%n", getName(), hogwartsStudent.getName());
         } else if (ability2 > ability1){

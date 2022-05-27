@@ -20,8 +20,8 @@ public class Main {
         System.out.println(draco);
         System.out.println(sedric);
 
-        harry.compareTo(draco);
-        harry.compareTo(ron);
+        harry.compareHogwarts(draco);
+        harry.compareHogwarts(ron);
     }
 
     private static int generate() {

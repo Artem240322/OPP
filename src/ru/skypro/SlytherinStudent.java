@@ -58,7 +58,7 @@ public class SlytherinStudent extends HogwartsStudent{
 
 
 
-    @Override
+
     public int ability() {
         return cunning + determination + ambition + ingenuity + thirstForPower;
     }
