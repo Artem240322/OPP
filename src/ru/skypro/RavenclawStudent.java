@@ -43,7 +43,7 @@ public class RavenclawStudent extends HogwartsStudent{
     }
 
     public void setCreativity(int creativity) {
-        this.creativity = creativity;
+       this.creativity = creativity;
     }
 
     @Override
