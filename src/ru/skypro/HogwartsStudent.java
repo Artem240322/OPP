@@ -43,7 +43,15 @@ public abstract class HogwartsStudent {
     }
 
     public void compareTo(HogwartsStudent hogwartsStudent){
-
+        int ability1 = ability();
+        int ability2 = hogwartsStudent.ability();
+        if (ability1 > ability2) {
+            System.out.printf("Студент %s лучше студента %s%n", getName(), hogwartsStudent.getName());
+        } else if (ability2 > ability1){
+            System.out.printf("Студент %s лучше студента %s%n", hogwartsStudent.getName(), getName());
+        } else {
+            System.out.printf("Студент %s такой же как %s%n", hogwartsStudent.getName(), getName());
+        }
     }
 
 
