@@ -8,8 +8,7 @@ public class Main {
 
     public static void main (String[] args) {
 
-        HogwartsStudent harry;
-        harry = GriffindorSudent("Гарри Потер" generate(), generate(), generate(), generate(), generate());
+        HogwartsStudent harry = GriffindorSudent("Гарри Потер", generate(), generate(), generate(), generate(), generate());
         HogwartsStudent ron = GriffindorSudent("Рон Уизли", generate(), generate(), generate(), generate(), generate());
         HogwartsStudent luna = RavenclawStudent("Палувна Лавгуд", generate(), generate(), generate(), generate(), generate());
         HogwartsStudent draco = SlytherinStudent("Драко Малфлой", generate(), generate(), generate(), generate(), generate());
@@ -25,7 +24,8 @@ public class Main {
         harry.compareTo(ron);
     }
 
-    private static int generat() {
+    private static int generate() {
         return RANDOM.nextInt(100);
     }
+
 }
